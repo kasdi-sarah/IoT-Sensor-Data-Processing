@@ -1,0 +1,12 @@
+How to use our code?
+1. Activate conda environment
+conda activate td5
+2. Lancer spark:
+pyspark
+3. Simulate sensor data:
+python sensor.py
+4. Process streaming data from kafka and génerate alerts:
+python Process_iot_streaming.py pkc-e0zxq.eu-west-3.aws.confluent.cloud:9092 subscribe sensor
+5. Visualization:
+python Process_iot_streaming_v2.py
+
